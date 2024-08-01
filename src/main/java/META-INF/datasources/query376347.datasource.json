@@ -1,0 +1,233 @@
+{
+  "customId": "queryCadastroVendas",
+  "queryName": "Cadastro vendas",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "VENDAS",
+  "entityFullName": "app.entity.VENDAS",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "isNativeQuery": false,
+    "namespace": "app",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "VENDAS",
+        "namespace": "app.entity.VENDAS",
+        "dataSourceOptions": {
+          "id": "app.VENDAS",
+          "customId": "VENDAS",
+          "customQueryName": "app.VENDAS",
+          "paramValues": [],
+          "entityFullName": "app.entity.VENDAS",
+          "schemaFields": [
+            {
+              "name": "id",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "data_venda",
+              "type": "DateTime",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "usuario_venda",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "quantidade",
+              "type": "Int32",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "valor_total",
+              "type": "Double",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "comprovante_pagamento",
+              "type": "Binary",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "prODUTO",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            },
+            {
+              "name": "_objectKey",
+              "type": "String",
+              "nullable": false,
+              "notEmpty": false,
+              "key": true
+            },
+            {
+              "name": "prODUTO_nome_produto",
+              "type": "String",
+              "nullable": true,
+              "notEmpty": false,
+              "key": false
+            }
+          ],
+          "type": "entity",
+          "hasError": false,
+          "customName": "VENDAS",
+          "fullName": "app.entity.VENDAS",
+          "labelName": "app.entity.VENDAS (VENDAS)"
+        },
+        "alias": "v"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "v.id",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "v.comprovante_pagamento",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "v.data_venda",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "v.prODUTO.caTEGORIA.categoria",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "v.prODUTO.nome_produto",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "v.prODUTO.preco",
+        "type": "double"
+      },
+      {
+        "func": "get",
+        "field": "v.usuario_venda",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "v.quantidade",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "v.valor_total",
+        "type": "double"
+      }
+    ],
+    "rulesJoin": [],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "comprovante_pagamento": null,
+    "data_venda": null,
+    "prODUTO_caTEGORIA_categoria": null,
+    "prODUTO_nome_produto": null,
+    "prODUTO_preco": null,
+    "usuario_venda": null,
+    "quantidade": null,
+    "valor_total": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "comprovante_pagamento": null,
+    "data_venda": null,
+    "prODUTO_caTEGORIA_categoria": null,
+    "prODUTO_nome_produto": null,
+    "prODUTO_preco": null,
+    "usuario_venda": null,
+    "quantidade": null,
+    "valor_total": null
+  },
+  "security": {
+    "id": null,
+    "comprovante_pagamento": null,
+    "data_venda": null,
+    "prODUTO_caTEGORIA_categoria": null,
+    "prODUTO_nome_produto": null,
+    "prODUTO_preco": null,
+    "usuario_venda": null,
+    "quantidade": null,
+    "valor_total": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query376347/",
+  "audit": false,
+  "swagger": false,
+  "library": false
+}
