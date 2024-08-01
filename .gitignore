@@ -26,3 +26,7 @@ ports.pid
 node_modules
 .factorypath
 .settings
+
+src\main\webapp\js\blockly.js
+src\main\webapp\js\system-events.js
+src\main\webapp\js\hostApp.js

@@ -1,0 +1,12 @@
+window.fixedTimeZone = true;
+window.timeZone = 'UTC';
+window.timeZoneOffset = 0;
+window.blockly = window.blockly || {};
+window.blockly.js = window.blockly.js || {};
+window.blockly.js.blockly = window.blockly.js.blockly || {};
+window.translations = window.translations || {};
+window.translations.localesKeys = ['en_us','pt_br'];
+window.translations.localesRef =  {"en*":"en_us","pt*":"pt_br","*":"pt_br"};
+document.write("<script charset='UTF-8' src='js/blockly/MutualAuth.blockly.js?1722512841754'></script>");
+document.write("<script charset='UTF-8' src='js/blockly/privacy/Cookies.blockly.js?1722512841813'></script>");
+document.write("<script charset='UTF-8' src='js/blockly/UserControl.blockly.js?1722512841790'></script>");
