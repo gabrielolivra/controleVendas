@@ -8,7 +8,7 @@ Projeto desenvolvido pela disciplina de Programação Orientada a Objetos em Jav
 
 # Diagrama
 
-[documento PDF](diagram.pdf)
+[Diagrama PDF](diagram.pdf)
 
 # Telas
 
