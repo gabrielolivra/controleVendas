@@ -6,6 +6,10 @@ Projeto desenvolvido pela disciplina de Programação Orientada a Objetos em Jav
 
 1. Spring boot
 
+# Diagrama
+
+[documento PDF](diagram.pdf)
+
 # Telas
 
 1. Tela de login
